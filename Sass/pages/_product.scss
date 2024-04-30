@@ -1,0 +1,36 @@
+.product {
+  padding-top: 70px;
+  &__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  &__img {
+    img {
+      width: 80%;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__info__desc {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  @media (max-width: 950px) {
+    padding-top: 150px;
+    &__card {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      align-items: center;
+    }
+  }
+}
